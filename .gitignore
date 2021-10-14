@@ -1,0 +1,14 @@
+# files
+*.pyc
+*.sqlite3
+*.env
+celerybeat-schedule
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# dirs
+venv/
+_base/
+.vscode/
+**/migrations/

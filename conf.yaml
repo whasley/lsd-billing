@@ -1,0 +1,28 @@
+billing:
+  admin:
+    mail: cloud@lsd.ufcg.edu.br
+  users:
+    send_report_on_day: 1
+
+openstack:
+  collect_period: 5
+
+monasca:
+  collect_period: 1
+  statistics:
+    - name: [
+        vm.cpu.utilization_norm_perc,
+        vm.mem.free_perc,
+        vm.net.in_bytes,
+        vm.net.out_bytes,
+      ]
+      type: avg
+      dimension: resource_id
+      period: 60
+    - name: [
+        cpu.percent,
+        mem.free_perc,
+      ]
+      type: avg
+      dimension: hostname
+      period: 60

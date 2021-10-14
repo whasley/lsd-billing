@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing</title>
+    <link
+      rel="shortcut icon"
+      href="https://danielx285.github.io/bilhetagem-lsd-style/icone_lsd.ico"
+    />
+    <link
+      href="https://danielx285.github.io/bilhetagem-lsd-style/style.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="nav">
+      <img
+        src="https://danielx285.github.io/bilhetagem-lsd-style/lsd.svg"
+        class="nav"
+      />
+    </header>
+
+    <div style="width: 800px; margin: 10px auto; border: 1px solid #fff">
+      <div>
+        <h3>Relatório utilização Cloud LSD</h3>
+        <div class="use_per_hour" style="padding: 0; margin: 10px 0; border: 0;">
+          <p style="margin: 0;"><b>Mês referência:</b> Setembro de 2021</p>
+          <p style="margin: 0;"><b>Domínio:</b> LSD</p>
+          <p style="margin: 0;"><b>Projeto:</b> Shylock</p>
+          <p style="margin: 0;"><b>Uso total de memória:</b> 243540 GB * h</p>
+          <p style="margin: 0;"><b>Uso total de processamento:</b> 121770 vCPU * h</p>
+          <p style="margin: 0;"><b>Utilização média de CPU:</b> 6.81%</p>
+        </div>
+      </div>
+
+      <div style="margin: 25px 0 10px 0; border-bottom: 1px solid #ddd">
+        <h4 style="color: #444">Alocação</h4>
+      </div>
+
+      <table style="margin: 0">
+        <tbody>
+          <tr>
+            <th>Nome</th>
+            <th>Usado</th>
+            <th>Reservado</th>
+            <th>% em uso</th>
+          </tr>
+          <tr>
+            <td>Instâncias</td>
+            <td>7</td>
+            <td>12</td>
+            <td>58.33%</td>
+          </tr>
+          <tr>
+            <td>vCPU</td>
+            <td>27</td>
+            <td>32</td>
+            <td>84.38%</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>54</td>
+            <td>64</td>
+            <td>84.38%</td>
+          </tr>
+          <tr>
+            <td>Armazenamento</td>
+            <td>670</td>
+            <td>1000</td>
+            <td>67.00%</td>
+          </tr>
+          <tr>
+            <td>Volumes</td>
+            <td>4</td>
+            <td>12</td>
+            <td>33.33%</td>
+          </tr>
+          <tr>
+            <td>Backups</td>
+            <td>0</td>
+            <td>12</td>
+            <td>0.00%</td>
+          </tr>
+          <tr>
+            <td>Snapshots de volume</td>
+            <td>0</td>
+            <td>12</td>
+            <td>0.00%</td>
+          </tr>
+          <tr>
+            <td>Load Balancers</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0.00%</td>
+          </tr>
+          <tr>
+            <td>IPs Flutuante</td>
+            <td>2</td>
+            <td>8</td>
+            <td>25.00%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin: 25px 0 10px 0; border-bottom: 1px solid #ddd">
+        <h4 style="color: #444">Instâncias</h4>
+      </div>
+
+      <table style="margin: 0px">
+        <tbody>
+          <tr>
+            <th>Nome</th>
+            <th>Flavor</th>
+            <th>Horas</th>
+            <th>Status</th>
+            <th>CPU Média</th>
+          </tr>
+          <tr>
+            <td>instance-1</td>
+            <td>lsd.t1.tiny</td>
+            <td style="text-align: right">744h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">8.6%</td>
+          </tr>
+          <tr>
+            <td>instance-2</td>
+            <td>lsd.t1.small</td>
+            <td style="text-align: right">744h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">4.9%</td>
+          </tr>
+          <tr>
+            <td>instance-3</td>
+            <td>lsd.t1.small</td>
+            <td style="text-align: right">744h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">9.2%</td>
+          </tr>
+          <tr>
+            <td>instance-4</td>
+            <td>lsd.t1.small</td>
+            <td style="text-align: right">744h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">0.5%</td>
+          </tr>
+          <tr>
+            <td>instance-5</td>
+            <td>lsd.t1.medium</td>
+            <td style="text-align: right">744h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">1.3%</td>
+          </tr>
+          <tr>
+            <td>instance-6</td>
+            <td>lsd.t1.large</td>
+            <td style="text-align: right">744h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">0.4%</td>
+          </tr>
+          <tr>
+            <td>instance-7</td>
+            <td>lsd.t1.large</td>
+            <td style="text-align: right">46h</td>
+            <td>Ativa</td>
+            <td style="text-align: right">22.8%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin: 25px 0 10px 0; border-bottom: 1px solid #ddd">
+        <h4 style="color: #444">Volumes</h4>
+      </div>
+
+      <table style="margin: 0">
+        <tbody>
+          <tr>
+            <th>Nome</th>
+            <th>Tamanho</th>
+          </tr>
+          <tr>
+            <td>volume-1</td>
+            <td style="text-align: right">10GB</td>
+          </tr>
+          <tr>
+            <td>volume-2</td>
+            <td style="text-align: right">20GB</td>
+          </tr>
+          <tr>
+            <td>volume-3</td>
+            <td style="text-align: right">60GB</td>
+          </tr>
+          <tr>
+            <td>volume-4</td>
+            <td style="text-align: right">80GB</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin: 25px 0 10px 0; border-bottom: 1px solid #ddd">
+        <h4 style="color: #444">Flavors</h4>
+      </div>
+
+      <table style="margin: 0">
+        <tbody>
+          <tr>
+            <th>Nome</th>
+            <th>VCPUS</th>
+            <th>RAM</th>
+            <th>Disco</th>
+          </tr>
+          <tr>
+            <td>lsd.t1.tiny</td>
+            <td style="text-align: right">1</td>
+            <td style="text-align: right">2048MB</td>
+            <td style="text-align: right">40GB</td>
+          </tr>
+          <tr>
+            <td>lsd.t1.small</td>
+            <td style="text-align: right">2</td>
+            <td style="text-align: right">4096MB</td>
+            <td style="text-align: right">60GB</td>
+          </tr>
+          <tr>
+            <td>lsd.t1.medium</td>
+            <td style="text-align: right">4</td>
+            <td style="text-align: right">8192MB</td>
+            <td style="text-align: right">80GB</td>
+          </tr>
+          <tr>
+            <td>lsd.t1.large</td>
+            <td style="text-align: right">8</td>
+            <td style="text-align: right">16384MB</td>
+            <td style="text-align: right">100GB</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+      <br />
+    </div>
+  </body>
+</html>
