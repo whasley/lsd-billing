@@ -233,3 +233,487 @@ def total_time(server, start_date, end_date):
 """
 
 
+
+def my_view():
+    """
+    generate html report
+    """
+    context = {
+    # "context": {
+        "sponsor1": [
+        {
+            "header": {
+                "month": "Setembro de 2021",
+                "domain": "LSD",
+                "project": "Projeto 0",
+                "mem_total": 243540,
+                "cpu_total": 121770,
+                "cpu_avg": 6.81
+            },
+            "body": {
+                "resources": [
+                    {
+                        "name": "Instâncias",
+                        "used": 7,
+                        "reserved": 12,
+                        "perc_used": 58.33
+                    },
+                    {
+                        "name": "vCPU",
+                        "used": 27,
+                        "reserved": 32,
+                        "perc_used": 84.38
+                    },
+                    {
+                        "name": "RAM",
+                        "used": 54,
+                        "reserved": 64,
+                        "perc_used": 84.38
+                    },
+                    {
+                        "name": "Armazenamento",
+                        "used": 670,
+                        "reserved": 1000,
+                        "perc_used": 67.00
+                    },
+                    {
+                        "name": "Volumes",
+                        "used": 4,
+                        "reserved": 12,
+                        "perc_used": 33.33
+                    },
+                    {
+                        "name": "Backups",
+                        "used": 0,
+                        "reserved": 12,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "Snapshots de volume",
+                        "used": 0,
+                        "reserved": 12,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "Load Balancers",
+                        "used": 0,
+                        "reserved": 4,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "IPs Flutuante",
+                        "used": 2,
+                        "reserved": 8,
+                        "perc_used": 25.00
+                    },
+                ],
+                "servers": [
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    }
+                ],
+                "volumes": [
+                    {
+                        "name": "volume-1",
+                        "size": 10
+                    },
+                    {
+                        "name": "volume-2",
+                        "size": 20
+                    },
+                    {
+                        "name": "volume-3",
+                        "size": 60
+                    },
+                    {
+                        "name": "volume-4",
+                        "size": 80
+                    }
+                ],
+                "flavors": [
+                    {
+                        "name": "lsd.t1.tiny",
+                        "vcpus": 1,
+                        "mem_gb": 2048,
+                        "disk_size": 40
+                    },
+                    {
+                        "name": "lsd.t1.small",
+                        "vcpus": 2,
+                        "mem_gb": 4096,
+                        "disk_size": 60
+                    },
+                    {
+                        "name": "lsd.t1.medium",
+                        "vcpus": 4,
+                        "mem_gb": 8192,
+                        "disk_size": 80
+                    },
+                    {
+                        "name": "lsd.t1.large",
+                        "vcpus": 8,
+                        "mem_gb": 16384,
+                        "disk_size": 100
+                    }               
+                ]
+            }
+        },
+    ],
+    "sponsor2": [
+        {
+            "header": {
+                "month": "Setembro de 2021",
+                "domain": "LSD",
+                "project": "Projeto 1",
+                "mem_total": 243540,
+                "cpu_total": 121770,
+                "cpu_avg": 6.81
+            },
+            "body": {
+                "resources": [
+                    {
+                        "name": "Instâncias",
+                        "used": 7,
+                        "reserved": 12,
+                        "perc_used": 58.33
+                    },
+                    {
+                        "name": "vCPU",
+                        "used": 27,
+                        "reserved": 32,
+                        "perc_used": 84.38
+                    },
+                    {
+                        "name": "RAM",
+                        "used": 54,
+                        "reserved": 64,
+                        "perc_used": 84.38
+                    },
+                    {
+                        "name": "Armazenamento",
+                        "used": 670,
+                        "reserved": 1000,
+                        "perc_used": 67.00
+                    },
+                    {
+                        "name": "Volumes",
+                        "used": 4,
+                        "reserved": 12,
+                        "perc_used": 33.33
+                    },
+                    {
+                        "name": "Backups",
+                        "used": 0,
+                        "reserved": 12,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "Snapshots de volume",
+                        "used": 0,
+                        "reserved": 12,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "Load Balancers",
+                        "used": 0,
+                        "reserved": 4,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "IPs Flutuante",
+                        "used": 2,
+                        "reserved": 8,
+                        "perc_used": 25.00
+                    },
+                ],
+                "servers": [
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    }
+                ],
+                "volumes": [
+                    {
+                        "name": "volume-1",
+                        "size": 10
+                    },
+                    {
+                        "name": "volume-2",
+                        "size": 20
+                    },
+                    {
+                        "name": "volume-3",
+                        "size": 60
+                    },
+                    {
+                        "name": "volume-4",
+                        "size": 80
+                    }
+                ],
+                "flavors": [
+                    {
+                        "name": "lsd.t1.tiny",
+                        "vcpus": 1,
+                        "mem_gb": 2048,
+                        "disk_size": 40
+                    },
+                    {
+                        "name": "lsd.t1.small",
+                        "vcpus": 2,
+                        "mem_gb": 4096,
+                        "disk_size": 60
+                    },
+                    {
+                        "name": "lsd.t1.medium",
+                        "vcpus": 4,
+                        "mem_gb": 8192,
+                        "disk_size": 80
+                    },
+                    {
+                        "name": "lsd.t1.large",
+                        "vcpus": 8,
+                        "mem_gb": 16384,
+                        "disk_size": 100
+                    }               
+                ]
+            }
+        },
+        {
+            "header": {
+                "month": "Setembro de 2021",
+                "domain": "LSD",
+                "project": "Projeto 2",
+                "mem_total": 243540,
+                "cpu_total": 121770,
+                "cpu_avg": 6.81
+            },
+            "body": {
+                "resources": [
+                    {
+                        "name": "Instâncias",
+                        "used": 7,
+                        "reserved": 12,
+                        "perc_used": 58.33
+                    },
+                    {
+                        "name": "vCPU",
+                        "used": 27,
+                        "reserved": 32,
+                        "perc_used": 84.38
+                    },
+                    {
+                        "name": "RAM",
+                        "used": 54,
+                        "reserved": 64,
+                        "perc_used": 84.38
+                    },
+                    {
+                        "name": "Armazenamento",
+                        "used": 670,
+                        "reserved": 1000,
+                        "perc_used": 67.00
+                    },
+                    {
+                        "name": "Volumes",
+                        "used": 4,
+                        "reserved": 12,
+                        "perc_used": 33.33
+                    },
+                    {
+                        "name": "Backups",
+                        "used": 0,
+                        "reserved": 12,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "Snapshots de volume",
+                        "used": 0,
+                        "reserved": 12,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "Load Balancers",
+                        "used": 0,
+                        "reserved": 4,
+                        "perc_used": 0
+                    },
+                    {
+                        "name": "IPs Flutuante",
+                        "used": 2,
+                        "reserved": 8,
+                        "perc_used": 25.00
+                    },
+                ],
+                "servers": [
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    },
+                    {
+                        "name": "instance-1",
+                        "flavor": "lsd.t1.tiny",
+                        "hours_used": 744,
+                        "status": "Ativo",
+                        "cpu_avg": 8.6
+                    }
+                ],
+                "volumes": [
+                    {
+                        "name": "volume-1",
+                        "size": 10
+                    },
+                    {
+                        "name": "volume-2",
+                        "size": 20
+                    },
+                    {
+                        "name": "volume-3",
+                        "size": 60
+                    },
+                    {
+                        "name": "volume-4",
+                        "size": 80
+                    }
+                ],
+                "flavors": [
+                    {
+                        "name": "lsd.t1.tiny",
+                        "vcpus": 1,
+                        "mem_gb": 2048,
+                        "disk_size": 40
+                    },
+                    {
+                        "name": "lsd.t1.small",
+                        "vcpus": 2,
+                        "mem_gb": 4096,
+                        "disk_size": 60
+                    },
+                    {
+                        "name": "lsd.t1.medium",
+                        "vcpus": 4,
+                        "mem_gb": 8192,
+                        "disk_size": 80
+                    },
+                    {
+                        "name": "lsd.t1.large",
+                        "vcpus": 8,
+                        "mem_gb": 16384,
+                        "disk_size": 100
+                    }               
+                ]
+            }
+        },
+    ]
+    }
+    # }
+
+    # report = generate_report()
+    # for sponsor in report:
+    #     for project in report[sponsor]:
+    #         content = render_to_string('user_report_template.html', context)
+    #         with open('./sample.html', 'w', encoding="utf-8") as static_file:
+    #             static_file.write(content)
+
+    # content = render_to_string('user_report_template.html', context)
+    context = generate_report()
+    for sponsor in context:
+        new_context = {}
+        new_context['context'] = context[sponsor]
+        content = render_to_string('user_report_template.html', new_context)
+        filename = "%s.html" % sponsor
+        with open(filename, 'w', encoding="utf-8") as static_file:
+            static_file.write(content)
+
+    # content = render_to_string('user_report_template.html', context)
+    # with open('./sample.html', 'w', encoding="utf-8") as static_file:
+    #     static_file.write(content)
+    #return render('template.html', context)
+
+my_view()
